@@ -1,9 +1,9 @@
-import Form from "./form.js";
+import MessageBox from "./messageBox.js";
 import "../styles.css";
 function MainRoom(){
     return(
         <div className="textbox" >
-            <Form/>
+            <MessageBox/>
         </div>
     );
 }

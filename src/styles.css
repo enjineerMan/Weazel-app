@@ -4,6 +4,19 @@
     left: 50px;
 }
 
-.form {
+.password-box {
+    position: absolute;
+    top: 40vh;
+    left: 38vw;
+}
 
+.login {
+    position: absolute;
+    top: 10vh;
+    left: 38vw;
+}
+
+.signup-signin {
+    position: relative;
+    top: 10vh;
 }

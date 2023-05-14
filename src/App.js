@@ -1,24 +1,35 @@
-import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
-import MainRoom from "./components/main_room.js";
-import Login from "./components/login.js";
-import PasswordBox from "./components/passwordBox.js";
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './App.css';
+import HomePage from './containers/HomePage';
+import LoginPage from './containers/LoginPage';
+import RegisterPage from './containers/RegisterPage';
+import PrivateRoute from './components/PrivateRoute';
+import { useDispatch, useSelector } from 'react-redux';
+import { isLoggedInUser } from './actions';
 
 function App() {
+
+  const auth = useSelector(state => state.auth);
+  const dispatch = useDispatch()
+
+
+  useEffect(() => {
+    if(!auth.authenticated){
+      dispatch(isLoggedInUser())
+    }
+  }, []);
+
+
   return (
     <div className="App">
       <Router>
-        <Routes>
-          <Route path="/" element={<Navigate replace to="/login"/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/main-room" element={<MainRoom/>}/>
-          <Route path="/enter-password" element={<PasswordBox/>}/>
-        </Routes>
+        {/* only logged in user can access this home route */}
+        <PrivateRoute path="/" exact component={HomePage} />
+
+
+        <Route path="/login" component={LoginPage} />
+        <Route path="/signup" component={RegisterPage} />
       </Router>
     </div>
   );

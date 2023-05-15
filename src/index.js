@@ -20,7 +20,6 @@ const firebaseConfig = {
   measurementId: "G-VXYE76S2G7"
 };
 
-
 firebase.initializeApp(firebaseConfig);
 
 window.store = store;

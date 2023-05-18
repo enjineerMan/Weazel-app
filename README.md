@@ -17,14 +17,14 @@ Redux: A state management library for managing the application's state. <br>
 React Router: A routing library for handling navigation and URL management in a React application. <br>
 
 ### Installation
-Clone the repository: git clone git@github.com:enjineerMan/Weazel-app.git
-Navigate to the project directory: cd Weazel-app
-Install the dependencies: npm install
-Set up Firebase: Create a Firebase project and obtain the configuration values for your app. Update the Firebase configuration in the app.
-Start the development server: npm start
-Open the app in your browser: http://localhost:3000
-Contributing
-Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+Clone the repository: git clone git@github.com:enjineerMan/Weazel-app.git <br>
+Navigate to the project directory: cd Weazel-app <br>
+Install the dependencies: npm install <br>
+Set up Firebase: Create a Firebase project and obtain the configuration values for your app. Update the Firebase configuration in the app. <br>
+Start the development server: npm start <br> <br>
+Open the app in your browser: http://localhost:3000 <br>
+Contributing <br>
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request. <br>
 
 ### License
 This project is licensed under the MIT License.

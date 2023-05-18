@@ -1,6 +1,16 @@
 import { userConstants } from "./constants";
 import { firestore } from 'firebase';
-
+async function printCollection(collectionName) {
+    try {
+        const db = firestore();
+      const snapshot = await db.collection(collectionName).get();
+      snapshot.forEach((doc) => {
+        console.log(doc.id, '=>', doc.data());
+      });
+    } catch (error) {
+      console.error('Error fetching documents: ', error);
+    }
+  }
 export const getRealtimeUsers = (uid) => {
 
     //console.log('uid', uid)
@@ -27,7 +37,7 @@ export const getRealtimeUsers = (uid) => {
             });
 
         });
-
+        printCollection('users');
         return unsubscribe;
 
     }

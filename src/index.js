@@ -8,16 +8,16 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 
-// Your web app's Firebase configuration
+//Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBF8co3-j6lq7qGI9b8s0U1YYEIwqXb4_0",
-  authDomain: "web-messenger-4eb99.firebaseapp.com",
-  databaseURL: "https://web-messenger-4eb99.firebaseio.com",
-  projectId: "web-messenger-4eb99",
-  storageBucket: "web-messenger-4eb99.appspot.com",
-  messagingSenderId: "252569616509",
-  appId: "1:252569616509:web:2bbb4c394e9d608f147114",
-  measurementId: "G-VXYE76S2G7"
+  apiKey: "AIzaSyBQQtxhmDg23wBrsOCBoQmbOujEH5-KkaU",
+  authDomain: "weazel-321a6.firebaseapp.com",
+  databaseURL: "https://weazel-321a6.firebaseio.com",
+  projectId: "weazel-321a6",
+  storageBucket: "weazel-321a6.appspot.com",
+  messagingSenderId: "421051763550",
+  appId: "1:421051763550:web:3fe01b3299c73d86a2ddcf",
 };
 
 firebase.initializeApp(firebaseConfig);

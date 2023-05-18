@@ -4,17 +4,17 @@ Weazel is a real-time chat application built using React, Firebase, and Redux. I
 <img width="1437" alt="image" src="https://github.com/enjineerMan/Weazel-app/assets/62212652/88460b5a-90a2-44aa-8aca-8692416ee082">
 
 ### Features
-User Authentication: Users can sign up and log in using their email and password to access the messaging app.
-Real-time Messaging: Users can send and receive messages in real-time, enabling instant communication.
-Chat Rooms (to be completed): Users can create chat rooms and join existing ones to engage in group conversations.
-User Presence: The app displays the online/offline status of users, providing visibility into their availability.
-Message History: The app stores message history, allowing users to view past conversations.
+User Authentication: Users can sign up and log in using their email and password to access the messaging app. <br>
+Real-time Messaging: Users can send and receive messages in real-time, enabling instant communication. <br>
+Chat Rooms (to be completed): Users can create chat rooms and join existing ones to engage in group conversations. <br>
+User Presence: The app displays the online/offline status of users, providing visibility into their availability. <br>
+Message History: The app stores message history, allowing users to view past conversations. <br>
 
 ### Technologies Used
-React: A JavaScript library for building user interfaces.
-Firebase: A cloud-based platform that provides various services, including authentication and real-time database capabilities.
-Redux: A state management library for managing the application's state.
-React Router: A routing library for handling navigation and URL management in a React application.
+React: A JavaScript library for building user interfaces. <br>
+Firebase: A cloud-based platform that provides various services, including authentication and real-time database capabilities. <br>
+Redux: A state management library for managing the application's state. <br>
+React Router: A routing library for handling navigation and URL management in a React application. <br>
 
 ### Installation
 Clone the repository: git clone git@github.com:enjineerMan/Weazel-app.git
